@@ -1,0 +1,33 @@
+<html>
+<title>Clase 1-ACTIVIDAD</title>
+
+<body>
+    <script>
+
+
+
+        const triangulos = [
+            { base: 5, altura: 8 },
+            { base: 10, altura: 3 },
+            { base: 7, altura: 7 },
+            { base: 4, altura: 9 },
+            { base: 6, altura: 12 }
+        ];
+
+        function calcularAreaTriangulo(base, altura) {
+            return (base * altura) / 2;
+        }
+
+        triangulos.forEach((triangulo, index) => {
+            const area = calcularAreaTriangulo(triangulo.base, triangulo.altura);
+            console.log(`Área del triángulo ${index + 1}: ${area}`);
+        });
+
+
+
+
+
+    </script>
+</body>
+
+</html>
