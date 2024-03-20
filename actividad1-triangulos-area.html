@@ -1,32 +1,39 @@
+<!DOCTYPE html>
 <html>
-<title>Clase 1-ACTIVIDAD</title>
+
+<head>
+    <title>Clase 1-ACTIVIDAD</title>
+</head>
 
 <body>
     <script>
 
+        const triangulos = [{
+            base: genera_numero_entero_aleatorio(10),altura: genera_numero_entero_aleatorio(10)
+        },
+        { base: genera_numero_entero_aleatorio(10), altura: genera_numero_entero_aleatorio(10) },
+        { base: genera_numero_entero_aleatorio(10), altura: genera_numero_entero_aleatorio(10) },
+        { base: genera_numero_entero_aleatorio(10), altura: genera_numero_entero_aleatorio(10) },
+        { base: genera_numero_entero_aleatorio(10), altura: genera_numero_entero_aleatorio(10) }];
 
-
-        const triangulos = [
-            { base: 5, altura: 8 },
-            { base: 10, altura: 3 },
-            { base: 7, altura: 7 },
-            { base: 4, altura: 9 },
-            { base: 6, altura: 12 }
-        ];
+        function genera_numero_entero_aleatorio(limite_superior) {
+            return Math.floor(Math.random() * limite_superior) + 1;
+        }
 
         function calcularAreaTriangulo(base, altura) {
-            var area = (base * altura) / 2
+            var area = (base * altura) / 2;
             return area;
         }
 
-        triangulos.forEach((triangulo, index) => {
-            const area = calcularAreaTriangulo(triangulo.base, triangulo.altura);
-            console.log(`Área del triángulo ${index + 1}: ${area}`);
-        });
 
 
-
-
+        function mostrarAreas(triangulos) {
+            triangulos.forEach((triangulo, index) => {
+                const area = calcularAreaTriangulo(triangulo.base, triangulo.altura);
+                console.log(`Triángulo ${index + 1}: Base ${triangulo.base}, Altura ${triangulo.altura}, Área ${area}`);
+            });
+        }
+        mostrarAreas(triangulos);
 
     </script>
 </body>
