@@ -1,0 +1,52 @@
+.plato {
+    display: flex;
+    align-items: center;
+    border: solid 1px #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background: #efefef;
+    box-shadow: 0px 3px 5px #c3c3c370;
+    position: relative;
+}
+
+.plato .icon {
+    width: 44px;
+    height: 44px;
+    position: relative;
+}
+
+.plato .icon-rico:before {
+    content: '✓';
+    position: absolute;
+    font-size: 24px;
+    top: 8px;
+    left: 10px;
+    color: #239126;
+}
+
+.plato .icon-no-rico:before {
+    content: '✗';
+    position: absolute;
+    font-size: 24px;
+    top: 8px;
+    left: 10px;
+    color: #f75454;
+}
+
+.plato .data {
+    border-right: solid 1px #bdbdbd;
+    padding: 10px 0px;
+    padding-right: 20px;
+    min-width: 250px;
+}
+
+.plato .data h4 {
+    margin: 0px;
+    font-size: 20px;
+}
+
+.plato .data p {
+    margin: 0px;
+    font-size: 18px;
+    color: #939393;
+}
