@@ -9,19 +9,34 @@ setTimeout(function () {
 }, 1000);
 
 const platosPeruanos = [
-    { "nombre": "Ceviche", "rico": true },
-    { "nombre": "Lomo Saltado", "rico": true },
-    { "nombre": "Ají de Gallina", "rico": true },
-    { "nombre": "Causa Limeña", "rico": true },
-    { "nombre": "Anticuchos", "rico": true },
-    { "nombre": "Papa a la Huancaína", "rico": true },
-    { "nombre": "Rocoto Relleno", "rico": true },
+    { "nombre": "Adobo", "rico": false },
+    { "nombre": "Chaufa de Mariscos", "rico": true },
+    { "nombre": "Parihuela", "rico": true },
+    { "nombre": "Humitas", "rico": true },
+    { "nombre": "Mazamorra Morada", "rico": true },
+    { "nombre": "Sopa Criolla", "rico": false },
+    { "nombre": "Tiradito", "rico": true },
+    { "nombre": "Aji de Langostinos", "rico": true },
+    { "nombre": "Tacacho con Cecina", "rico": true },
+    { "nombre": "Carapulcra", "rico": true },
+    { "nombre": "Picante de Cuy", "rico": true },
+    { "nombre": "Mondongo a la Italiana", "rico": false },
+    { "nombre": "Pachamanca", "rico": true },
+    { "nombre": "Sopa de Choros", "rico": false },
     { "nombre": "Pollo a la Brasa", "rico": true },
     { "nombre": "Chicharrón", "rico": true },
     { "nombre": "Tacu Tacu", "rico": true },
     { "nombre": "Caldo de Pata", "rico": false },
     { "nombre": "Cuy al Horno", "rico": false },
-    { "nombre": "Sopa de Mondongo", "rico": false }
+    { "nombre": "Sopa de Mondongo", "rico": false },
+    { "nombre": "Higado encebollado", "rico": false },
+    { "nombre": "Chanfainita", "rico": false },
+    { "nombre": "Sancochado", "rico": false },
+    { "nombre": "Cau Cau", "rico": false },
+    { "nombre": "Patasca", "rico": false },
+    { "nombre": "Arroz con Pato", "rico": true },
+    { "nombre": "Seco a la Norteña", "rico": true }
+
 ];
 
 const dishElement = document.getElementById("dishes");
