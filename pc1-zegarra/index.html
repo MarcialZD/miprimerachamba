@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Contratación de Personal</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+
+<body>
+    <h1>Gestión de Contratación de Personal</h1>
+
+    <div class="formulario">
+        <form id="personForm">
+            <label for="personName">Nombre:</label>
+            <input type="text" id="personName" required>
+            <label for="personJob">Oficio:</label>
+            <input type="text" id="personJob" required>
+            <button type="submit">Añadir Persona</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="lista" id="listaDisponible">
+            <h2>Personas Disponibles</h2>
+        </div>
+
+        <div class="lista lista-contratada" id="listaContratada">
+            <h2>Personas Contratadas</h2>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <footer class="footer">
+        <marquee behavior="" direction="">
+            <strong>
+                <p>Derechos Reservados &copy; Marcial Zegarra Díaz PC 1</p>
+            </strong>
+
+        </marquee>
+    </footer>
+</body>
+
+</html>
